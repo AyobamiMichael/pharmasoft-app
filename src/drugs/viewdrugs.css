@@ -1,0 +1,9 @@
+.grid{
+    top: 100px;
+    position: relative;
+    left: 240px;
+}
+.global-class-name {
+    vertical-align: middle;
+    size: 2em;
+  }
