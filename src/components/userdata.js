@@ -11,7 +11,7 @@ const UserData = (props) => {
     const aname = 'ademi';
 
   useEffect(()=>{
-    fetch("http://www.findam.ng/userData", {
+    fetch("https://www.findam.ng/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
