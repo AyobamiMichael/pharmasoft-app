@@ -17,7 +17,7 @@ export default class SignUp extends Component {
        e.preventDefault();
         const { fname, lname, uname, password } = this.state;
         console.log(fname, lname, uname, password);
-        fetch("https://www.findam.ng/register",{
+        fetch("http://www.findam.ng/register",{
            method: "POST",
            crossDomain: true,
            headers: {
@@ -31,6 +31,7 @@ export default class SignUp extends Component {
             uname,
             password,
           }),
+          referrerPolicy: "unsafe_url" 
         })
         .then((res) => res.json())
         .then((data) => {

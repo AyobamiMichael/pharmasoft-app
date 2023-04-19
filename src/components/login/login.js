@@ -17,7 +17,7 @@ export default class Login extends Component {
 
    componentDidMount(){
 
-    fetch("https://www.findam.ng/userData", {
+    fetch("http://www.findam.ng/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -28,6 +28,7 @@ export default class Login extends Component {
       body: JSON.stringify({
         token: window.localStorage.getItem("token"),
       }),
+      referrerPolicy: "unsafe_url" 
     })
       .then((res) => res.json())
       .then((data) => {
@@ -42,7 +43,7 @@ export default class Login extends Component {
     e.preventDefault();
     const {uname, password } = this.state;
     console.log(uname, password);
-    fetch("https://www.findam.ng/login-user", {
+    fetch("http://www.findam.ng/login-user", {
       method: "POST",
       crossDomain: true,
       headers: {
