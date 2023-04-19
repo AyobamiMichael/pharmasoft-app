@@ -28,7 +28,7 @@ export default class Login extends Component {
       body: JSON.stringify({
         token: window.localStorage.getItem("token"),
       }),
-      referrerPolicy: "unsafe_url" 
+     
     })
       .then((res) => res.json())
       .then((data) => {

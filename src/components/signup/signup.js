@@ -31,7 +31,7 @@ export default class SignUp extends Component {
             uname,
             password,
           }),
-          referrerPolicy: "unsafe_url" 
+        
         })
         .then((res) => res.json())
         .then((data) => {

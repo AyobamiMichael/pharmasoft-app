@@ -22,7 +22,7 @@ const UserData = (props) => {
       body: JSON.stringify({
         token: window.localStorage.getItem("token"),
       }),
-      referrerPolicy: "unsafe_url" 
+   
     })
       .then((res) => res.json())
       .then((data) => {
