@@ -17,7 +17,7 @@ export default class SignUp extends Component {
        e.preventDefault();
         const { fname, lname, uname, password } = this.state;
         console.log(fname, lname, uname, password);
-        fetch("http://54.89.82.209:4000/register",{
+        fetch("http://www.findam.ng/register",{
            method: "POST",
            crossDomain: true,
            headers: {
