@@ -11,7 +11,7 @@ const UserData = (props) => {
     const aname = 'ademi';
 
   useEffect(()=>{
-    fetch("http://54.89.82.209:4000/userData", {
+    fetch("http://www.findam.ng/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
