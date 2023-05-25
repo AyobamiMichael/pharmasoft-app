@@ -20,7 +20,7 @@ const SelectPharmacy= () =>{
    
   useEffect(()=>{
      
-      fetch('http://54.89.82.209:4000/multipharmaData',{
+      fetch('https://wegotam.com/multipharmaData',{
 
         method: "POST",
         crossDomain: true,

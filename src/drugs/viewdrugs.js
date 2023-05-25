@@ -98,7 +98,7 @@ const handleClickToDelete = () =>{
 
   useEffect(() => {
      
-    fetch("http://54.89.82.209:4000/viewdrugs", {
+    fetch("https://wegotam.com/viewdrugs", {
       method: 'POST',
       crossDomain: true,
       headers: {
@@ -152,7 +152,7 @@ const handleClickToDelete = () =>{
    // setDeletedDrugs(clickedRow['_id'])
      const id = clickedRow['_id'];
 
-    fetch("http://54.89.82.209:4000/deletedrug",{
+    fetch("https://wegotam.com/deletedrug",{
       method: "POST",
       crossDomain: true,
       headers: {

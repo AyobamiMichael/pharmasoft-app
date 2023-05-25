@@ -31,7 +31,7 @@ const ViewAllDrugs =() =>{
   useState(() => {
 
      
-    fetch("http://54.89.82.209:4000/userData", {
+    fetch("https://wegotam.com/userData", {
       method: "POST",
       crossDomain: true,
       headers: {
@@ -56,7 +56,7 @@ const ViewAllDrugs =() =>{
 
 
 
-    fetch("http://54.89.82.209:4000/viewdrugs", {
+    fetch("https://wegotam.com/viewdrugs", {
        method: 'POST',
        crossDomain: true,
        headers: {

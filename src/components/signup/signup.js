@@ -17,7 +17,7 @@ export default class SignUp extends Component {
        e.preventDefault();
         const { fname, lname, uname, password } = this.state;
         console.log(fname, lname, uname, password);
-        fetch("http://www.findam.ng/register",{
+        fetch("https://wegotam.com/register",{
            method: "POST",
            crossDomain: true,
            headers: {

@@ -26,7 +26,7 @@ export default class RegisterDrug extends Component {
        e.preventDefault();
           const { drugname, mg, uname, price, quantity} = this.state;
           console.log(drugname, mg, uname, price, quantity);
-          fetch("http://54.89.82.209:4000/registerdrug",{
+          fetch("https://wegotam.com/registerdrug",{
              method: "POST",
              crossDomain: true,
              headers: {
@@ -57,7 +57,7 @@ export default class RegisterDrug extends Component {
     }
       
       componentDidMount(){
-        fetch("http://54.89.82.209:4000/userData", {
+        fetch("https://wegotam.com/userData", {
           method: "POST",
           crossDomain: true,
           headers: {

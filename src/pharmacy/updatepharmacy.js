@@ -21,7 +21,7 @@ export default class UpdatePharmacy extends Component {
          e.preventDefault();
           const { pname, paddress, phone} = this.state;
           console.log(pname, paddress, phone);
-          fetch("http://54.89.82.209:4000/updatepharmacy",{
+          fetch("https://wegotam.com/updatepharmacy",{
              method: "POST",
              crossDomain: true,
              headers: {

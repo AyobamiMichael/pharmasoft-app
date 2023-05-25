@@ -56,7 +56,7 @@ import Calendar from 'react-calendar';
        
      useEffect(()=>{
      
-      fetch('http://54.89.82.209:4000/multipharmaData',{
+      fetch('https://wegotam.com/multipharmaData',{
 
         method: "POST",
         crossDomain: true,
@@ -142,7 +142,7 @@ console.log(data);
 
  // For adding uname into drug collection
      useEffect(()=>{
-      fetch("http://54.89.82.209:4000/userData", {
+      fetch("https://wegotam.com/userData", {
     method: "POST",
     crossDomain: true,
     headers: {
@@ -172,7 +172,7 @@ console.log(data);
           console.log(drugname, mg, uname, pricepercard, priceperpack, pricepercarton, pname, paddress, phone, alternativedrugname, alternativedrugprice, alternativedrugmg, time, drugcategory, expdate,  othersCategory);
 
          
-          fetch("http://54.89.82.209:4000/registerdrug",{
+          fetch("https://wegotam.com/registerdrug",{
              method: "POST",
              crossDomain: true,
              headers: {

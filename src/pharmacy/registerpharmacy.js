@@ -24,7 +24,7 @@ const RegisterPharmacy = () => {
     
 
     useEffect(()=>{
-      fetch("http://54.89.82.209:4000/userData", {
+      fetch("https://wegotam.com/userData", {
     method: "POST",
     crossDomain: true,
     headers: {
@@ -50,7 +50,7 @@ const RegisterPharmacy = () => {
          e.preventDefault();
          // const { pname, paddress, phone,  uname} = this.state;
           console.log(pname, paddress, phone,  uname, state);
-          fetch("http://54.89.82.209:4000/registerpharmacy",{
+          fetch("https://wegotam.com/registerpharmacy",{
              method: "POST",
              crossDomain: true,
              headers: {
