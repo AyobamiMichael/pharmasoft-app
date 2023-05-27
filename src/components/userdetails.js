@@ -13,7 +13,7 @@ const UserDetails =() =>{
      const [userviewsList, setuserViews] = useState([]);
 
      useEffect(()=>{
-         fetch('http://54.89.82.209:4000/userviews', {
+         fetch('https://wegotam.com/userviews', {
    
          })
          .then((res)=> res.json())
@@ -33,7 +33,7 @@ const UserDetails =() =>{
 
      useEffect(()=>{
      
-      fetch('http://54.89.82.209:4000/userData',{
+      fetch('https://wegotam.com/userData',{
 
         method: "POST",
         crossDomain: true,
