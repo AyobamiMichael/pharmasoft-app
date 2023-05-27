@@ -10,7 +10,7 @@
 
 
 
-  
+
 
   * {
     margin: 0;
@@ -52,6 +52,14 @@
         background-color: orange;
         color: black;
     }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
 }
  
 /* For Mobile Portrait View */
@@ -62,6 +70,14 @@
         height: 200px;
         background-color: red;
         color: #fff;
+    }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
     }
 }
  
@@ -74,6 +90,15 @@
         background-color: cyan;
         color: black;
     }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
+
 }
  
 /* For Mobile Phones Portrait or Landscape View */
@@ -85,6 +110,14 @@
         background-color: chartreuse;
         color: black;
     }
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
+
 }
  
 /* For iPhone 4 Portrait or Landscape View */
@@ -95,6 +128,14 @@
         height: 400px;
         background-color: brown;
         color: black;
+    }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
     }
 }
  
@@ -108,6 +149,15 @@
         background-color: cornflowerblue;
         color: black;
     }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
+
 }
  
 /* For iPhone 6 and 6 plus Portrait or Landscape View */
@@ -120,4 +170,14 @@
         background-color: darkgoldenrod;
         color: black;
     }
+
+    .grid{
+        top: 100px;
+        position: relative;
+        left: 150px;
+        width: 400px;
+        height: 400px;
+    }
+
+
 };
