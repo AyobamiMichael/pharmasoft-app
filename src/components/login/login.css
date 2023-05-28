@@ -1,8 +1,9 @@
 .logincontainer{
     top: 10em;
     position: relative;
-    width: 100px;
+    width: 300px;
     margin: 0;
+    align-items: center;
     display:inline-block;
     
 }
