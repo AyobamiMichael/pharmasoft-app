@@ -1,7 +1,7 @@
 .logincontainer{
     top: 10em;
     position: relative;
-    width: 200px;
+    width: 400px;
     margin: 0;
     align-items: center;
     display:inline-block;
@@ -42,6 +42,7 @@
     .gfg-div {
         background-color: #63c971;
         color: #fff;
+         width: 400px;
 
     }
 }
