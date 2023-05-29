@@ -10,7 +10,7 @@
 }
 
 /* For Tablet View */
-@media screen and (min-device-width: 768px)
+@media only screen and (min-device-width: 768px)
     and (max-device-width: 1024px) {
         body{
             width: 400px;
@@ -24,7 +24,7 @@
 }
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
+@media only screen and (max-device-width: 480px)
     and (orientation: portrait) {
     body {
         width: 200px;
