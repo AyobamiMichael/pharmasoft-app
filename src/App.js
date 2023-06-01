@@ -19,7 +19,7 @@ import EditDrug from './drugs/editproduct';
 import RegisterProduct from './drugs/registerproduct';
 import UserData from './components/userdata';
 import UserDetails from './components/userdetails';
-import searchdrugs from './landingpage/landingpage';
+import Searchdrugs from './landingpage/landingpage';
 
 
 
@@ -46,7 +46,7 @@ function App() {
    
        <Routes>
     
-       <Route exact path="/" element={<searchdrugs />} />
+       <Route exact path="/" element={<Searchdrugs />} />
        <Route path="/sign-in" element={<Login />} />
        <Route path="/sign-up" element={<SignUp />} />
        <Route path="/registerpharmacy" element={<RegisterPharmacy />} />

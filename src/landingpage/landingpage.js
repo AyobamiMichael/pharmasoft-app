@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TextField from "@mui/material/TextField";
 
-const searchdrugs =() => {
+const Searchdrugs =() => {
    
     return(
        <div className='drugsearchbar'>
@@ -18,4 +18,4 @@ const searchdrugs =() => {
     );
 }
 
-export default searchdrugs;
+export default Searchdrugs;
