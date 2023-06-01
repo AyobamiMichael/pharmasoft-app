@@ -14,10 +14,9 @@
 @media only screen and (min-device-width: 768px)
    {
     .signupcontainer{
-        width: 200px;
-        height: 200px;
-        background-color: orange;
-        color: black;
+        width: 400px;
+        height: 400px;
+      
     }
 }
 /* For Mobile Portrait View */
@@ -27,8 +26,7 @@
         .signupcontainer{
             width: 200px;
             height: 200px;
-            background-color: red;
-            color: #fff;
+           
 
         }
        
@@ -42,8 +40,7 @@
     .signupcontainer{
         width: 400px;
         height: 200px;
-        background-color: chartreuse;
-        color: black;
+       
     }
 }
  
