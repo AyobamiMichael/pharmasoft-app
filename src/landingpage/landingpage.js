@@ -14,6 +14,11 @@ const Searchdrugs =() => {
                 label="Search"
             />
            </div>
+           <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Register Pharmacy
+          </button>
+        </div>
        </div>  
     );
 }
