@@ -16,6 +16,9 @@
     .signupcontainer{
         width: 400px;
         height: 400px;
+        align-items: center;
+        display:inline-block;
+    
       
     }
 }
