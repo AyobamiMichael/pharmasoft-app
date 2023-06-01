@@ -9,3 +9,41 @@
 }
 
 
+
+/* For Tablet View */
+@media only screen and (min-device-width: 768px)
+   {
+    .signupcontainer{
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        color: black;
+    }
+}
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+
+        .signupcontainer{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: #fff;
+
+        }
+       
+    
+}
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+    and (max-device-width: 640px) {
+    .signupcontainer{
+        width: 400px;
+        height: 200px;
+        background-color: chartreuse;
+        color: black;
+    }
+}
+ 
