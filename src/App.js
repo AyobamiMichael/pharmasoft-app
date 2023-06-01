@@ -19,7 +19,7 @@ import EditDrug from './drugs/editproduct';
 import RegisterProduct from './drugs/registerproduct';
 import UserData from './components/userdata';
 import UserDetails from './components/userdetails';
-import searchdrugs from './landingpage';
+import searchdrugs from './landingpage/landingpage';
 
 
 
