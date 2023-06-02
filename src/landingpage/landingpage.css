@@ -15,3 +15,11 @@ h1{
 .searchbar{
     width: 30%;
 }
+
+.registerpharma{
+        position: relative;
+        width: 100px;
+        height: 200px;
+        top: 50px;
+        
+}

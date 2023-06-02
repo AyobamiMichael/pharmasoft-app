@@ -14,8 +14,8 @@ const Searchdrugs =() => {
                 label="Search"
             />
            </div>
-           <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+           <div className="registerpharma">
+          <button type="submit" className="addpharma">
             Register Pharmacy
           </button>
         </div>
