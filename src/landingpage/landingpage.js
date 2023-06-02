@@ -14,7 +14,11 @@ const Searchdrugs =() => {
                 label="Search"
             />
            </div>
-         
+           <div className="registerpharma">
+          <button type="submit" className="addpharma">
+            Register Pharmacy
+          </button>
+        </div>
        </div>  
     );
 }
