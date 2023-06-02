@@ -10,7 +10,7 @@ const Searchdrugs =() => {
             <TextField
                 id="outlined-basic"
                 variant="outlined"
-                fullWidth
+                fullWidth='false'
                 label="Search"
             />
            </div>
