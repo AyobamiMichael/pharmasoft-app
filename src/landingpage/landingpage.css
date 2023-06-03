@@ -6,9 +6,11 @@
     position: absolute;
     left: 200px;
     top: 100px;
+
 }
 .searchtextfield{
     width: 700px;
+    background-color: white;
 }
 .signin{
     position: absolute;
