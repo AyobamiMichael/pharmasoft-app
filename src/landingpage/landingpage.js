@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
 import TextField from "@mui/material/TextField";
+import { React, useState } from "react";
 import './landingpage.css';
 
 const Searchdrugs =() => {
