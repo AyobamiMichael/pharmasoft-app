@@ -15,8 +15,7 @@ h1{
 }
 .searchbar{
     width: 30%;
-    position: relative;
-    top: 500px;
+   
 }
 
 .registerpharma{
@@ -34,4 +33,9 @@ h1{
     height: 200px;
     top: 500px;
     bottom: 50px;
+}
+
+.searchtextfield{
+    position: absolute;
+    top: 300px;
 }
