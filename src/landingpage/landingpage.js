@@ -10,8 +10,8 @@ const Searchdrugs =() => {
             <TextField
                 id="outlined-basic"
                 variant="outlined"
-                className='searchtextfield'
                 label="Search"
+                
             />
            </div>
            <div className="registerpharma">
