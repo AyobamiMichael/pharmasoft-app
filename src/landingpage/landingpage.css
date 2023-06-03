@@ -8,10 +8,11 @@
     top: 100px;
 }
 .searchtextfield{
-    width: 500px;
+    width: 700px;
 }
 .signin{
     position: absolute;
     right: 200px;
     top: 100px;
+    width: 50px;
 }
