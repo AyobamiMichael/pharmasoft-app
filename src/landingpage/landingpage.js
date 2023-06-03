@@ -5,6 +5,7 @@ import './landingpage.css';
 const Searchdrugs =() => {
    
     return(
+      <div>
        <div className='searchbar'>
          <TextField
           id="outlined-basic"
@@ -12,6 +13,12 @@ const Searchdrugs =() => {
           label="Search"
           className='searchtextfield'
         />
+       </div>
+       <div className="signin">
+          <button type='button' className="btn btn-primary">
+            Sign In
+          </button>
+        </div>
        </div>
     );
 }

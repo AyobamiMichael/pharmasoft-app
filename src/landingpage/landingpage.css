@@ -6,3 +6,8 @@
 .searchtextfield{
     width: 500px;
 }
+.signin{
+    position: absolute;
+    right: 200px;
+    top: 100px;
+}
