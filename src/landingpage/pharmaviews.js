@@ -23,8 +23,28 @@ const Pharmaviews = () =>{
     }, [])
 
 
+    useEffect(()=>{
+        fetch('https://wegotam.com/listpharmacies', {
+  
+        })
+        .then((res)=> res.json())
+        .then((data)=>{
+            console.log(data, "pharmaciesData");
+           // result = data.data.username
+            setpharmaViews(data.data);
+           
+        });
+  
+    }, [])
+
+
+
 
 
     const userViews = userviewsList.map((userViews)=>(userViews.username));
     console.log(userViews);
+    console.log(phamaviewsList);
 }
+
+
+export default Pharmaviews;
