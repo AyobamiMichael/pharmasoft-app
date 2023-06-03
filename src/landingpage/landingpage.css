@@ -1,3 +1,7 @@
+.main{
+    background-color: white;
+    height: 50px;
+}
 .searchbar{
     position: absolute;
     left: 200px;
