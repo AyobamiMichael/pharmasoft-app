@@ -1,6 +1,6 @@
 .main{
     background-color: white;
-    height: 50px;
+    height: 100px;
 }
 .searchbar{
     position: absolute;
@@ -11,10 +11,11 @@
 .searchtextfield{
     width: 700px;
     background-color: white;
+   
 }
 .signin{
     position: absolute;
     right: 200px;
     top: 100px;
-    width: 50px;
+    width: 100px;
 }
