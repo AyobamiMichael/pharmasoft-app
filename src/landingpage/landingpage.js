@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import TextField from "@mui/material/TextField";
+import './landingpage.css';
 
 const Searchdrugs =() => {
    
     return(
        <div className='searchbar'>
-        <input type='search' 
-        placeholder='Search here'
-        
+         <TextField
+          id="outlined-basic"
+          variant="outlined"
+          label="Search"
         />
        </div>
     );

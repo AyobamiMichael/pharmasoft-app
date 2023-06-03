@@ -1,15 +1,5 @@
 .searchbar{
-
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    position: relative;
+    position: absolute;
     right: 500px;
-    color: brown;
     
-}
-h1{
-    margin: 10px;
-    font-size: 40px;
-    color: rgb(1, 1, 59);
 }
