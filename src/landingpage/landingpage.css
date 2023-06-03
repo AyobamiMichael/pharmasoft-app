@@ -1,5 +1,8 @@
 .searchbar{
     position: absolute;
-    right: 500px;
-    top: 200px;
+    right: 200px;
+    top: 100px;
+}
+.searchtextfield{
+    width: 300px;
 }
