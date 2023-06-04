@@ -46,13 +46,13 @@ const Pharmaviews = () =>{
     console.log(phamaviewsList);
 
 
-    return(
-        <ul>
-           {phamaviewsList.map((item) => (
-                <li key={item._id}>{item.pname}</li>
-            ))}
-        </ul>
-    )
+   // return(
+     //   <ul>
+       //    {phamaviewsList.map((item) => (
+         //       <li key={item._id}>{item.pname}</li>
+          //  ))}
+        //</ul>
+    //)
 
 
 }
