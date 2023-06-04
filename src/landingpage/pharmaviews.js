@@ -5,9 +5,9 @@ import React, { useState, useEffect, useRef } from 'react';
 const Pharmaviews = () =>{
 
     const [phamaviewsList, setpharmaViews] = useState([]);
-    const [userviewsList, setuserViews] = useState([]);
+   // const [userviewsList, setuserViews] = useState([]);
     const myList = [];
-
+     /*
     useEffect(()=>{
         fetch('https://wegotam.com/userviews', {
   
@@ -22,7 +22,7 @@ const Pharmaviews = () =>{
   
     }, [])
 
-
+*/
     useEffect(()=>{
         fetch('https://wegotam.com/listpharmacies', {
   
@@ -41,14 +41,11 @@ const Pharmaviews = () =>{
 
 
 
-    const userViews = userviewsList.map((userViews)=>(userViews.username));
+ //   const userViews = userviewsList.map((userViews)=>(userViews.username));
 
    // const pharmalist = phamaviewsList[0].pname;
-    console.log(userViews);
+   // console.log(userViews);
    // console.log(pharmalist);
-   myList.push(phamaviewsList);
-   console.log(myList);
-
    
     console.log(phamaviewsList);
 
