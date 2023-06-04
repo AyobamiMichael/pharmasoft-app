@@ -6,7 +6,7 @@ const Pharmaviews = () =>{
 
     const [phamaviewsList, setpharmaViews] = useState([]);
     const [userviewsList, setuserViews] = useState([]);
-
+    const myList = [];
 
     useEffect(()=>{
         fetch('https://wegotam.com/userviews', {
@@ -46,7 +46,11 @@ const Pharmaviews = () =>{
    // const pharmalist = phamaviewsList[0].pname;
     console.log(userViews);
    // console.log(pharmalist);
-    console.log(Array.isArray(phamaviewsList));
+   myList.push(phamaviewsList);
+   console.log(myList);
+
+   
+    console.log(phamaviewsList);
 
      return(
         <div>
