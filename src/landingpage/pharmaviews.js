@@ -43,7 +43,7 @@ const Pharmaviews = () =>{
 
     const userViews = userviewsList.map((userViews)=>(userViews.username));
 
-     const pharmalist = phamaviewsList[0];
+     const pharmalist = phamaviewsList[0].pname;
     console.log(userViews);
     console.log(pharmalist);
 
