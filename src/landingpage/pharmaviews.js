@@ -32,7 +32,7 @@ const Pharmaviews = () =>{
             console.log(data, "pharmaciesData");
             console.log(data.data[0]);
             setpharmaViews(data.data);
-            console.log(phamaviewsList[0]);
+           // console.log(phamaviewsList[0]);
            
         });
   
@@ -50,7 +50,7 @@ const Pharmaviews = () =>{
    
     
 
-     return(
+   /*  return(
         <div>
         {phamaviewsList.map(({_id, pname, paddres}) => {
           return (
@@ -64,7 +64,7 @@ const Pharmaviews = () =>{
         })}
       </div>
     )
-
+   */
 
 }
 
