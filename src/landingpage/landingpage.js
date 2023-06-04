@@ -1,6 +1,8 @@
 import TextField from "@mui/material/TextField";
 import { React, useState } from "react";
 import './landingpage.css';
+import './pharmaviews';
+import Pharmaviews from "./pharmaviews";
 
 const Searchdrugs =() => {
    
@@ -19,6 +21,7 @@ const Searchdrugs =() => {
             Sign In
           </button>
         </div>
+        <Pharmaviews />
        </div>
     );
 }

@@ -36,14 +36,25 @@ const Pharmaviews = () =>{
         });
   
     }, [])
-
-
+    
+   
 
 
 
     const userViews = userviewsList.map((userViews)=>(userViews.username));
     console.log(userViews);
     console.log(phamaviewsList);
+
+
+    return(
+        <ul>
+           {phamaviewsList.map((item) => (
+                <li key={item.uname}>{item.pname}</li>
+            ))}
+        </ul>
+    )
+
+
 }
 
 
