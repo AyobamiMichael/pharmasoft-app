@@ -14,7 +14,7 @@ const Pharmaviews = () =>{
         })
         .then((res)=> res.json())
         .then((data)=>{
-            console.log(data, "userViewsData");
+            //console.log(data, "userViewsData");
            // result = data.data.username
             setuserViews(data.data);
            
@@ -43,9 +43,9 @@ const Pharmaviews = () =>{
 
     const userViews = userviewsList.map((userViews)=>(userViews.username));
 
-     const pharmalist = phamaviewsList[0].pname;
+    // const pharmalist = phamaviewsList[0].pname;
     console.log(userViews);
-    console.log(pharmalist);
+   // console.log(pharmalist);
 
 
    // return(
