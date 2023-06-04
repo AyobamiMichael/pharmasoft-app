@@ -46,7 +46,7 @@ const Pharmaviews = () =>{
    // const pharmalist = phamaviewsList[0].pname;
     console.log(userViews);
    // console.log(pharmalist);
-
+    console.log(Array.isArray(phamaviewsList));
 
      return(
         <div>
