@@ -7,7 +7,7 @@ const Pharmaviews = () =>{
     const [phamaviewsList, setpharmaViews] = useState([]);
    // const [userviewsList, setuserViews] = useState([]);
     const myList = [];
-     /*
+     
     useEffect(()=>{
         fetch('https://wegotam.com/userviews', {
   
@@ -22,7 +22,7 @@ const Pharmaviews = () =>{
   
     }, [])
 
-*/
+
     useEffect(()=>{
         fetch('https://wegotam.com/listpharmacies', {
   
@@ -30,7 +30,7 @@ const Pharmaviews = () =>{
         .then((res)=> res.json())
         .then((data)=>{
             console.log(data, "pharmaciesData");
-           // result = data.data.username
+            myList = data.data[0];
             setpharmaViews(data.data);
            
         });
@@ -47,7 +47,7 @@ const Pharmaviews = () =>{
    // console.log(userViews);
    // console.log(pharmalist);
    
-    console.log(phamaviewsList);
+    console.log(myList);
 
      return(
         <div>
