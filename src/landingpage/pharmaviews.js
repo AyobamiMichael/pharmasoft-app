@@ -30,8 +30,9 @@ const Pharmaviews = () =>{
         .then((res)=> res.json())
         .then((data)=>{
             console.log(data, "pharmaciesData");
-            myList = data.data[0];
+            console.log(data.data[0]);
             setpharmaViews(data.data);
+            console.log(phamaviewsList[0]);
            
         });
   
@@ -47,7 +48,7 @@ const Pharmaviews = () =>{
    // console.log(userViews);
    // console.log(pharmalist);
    
-    console.log(myList);
+    
 
      return(
         <div>
