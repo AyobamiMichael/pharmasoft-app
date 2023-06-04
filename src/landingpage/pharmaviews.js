@@ -49,7 +49,7 @@ const Pharmaviews = () =>{
     return(
         <ul>
            {phamaviewsList.map((item) => (
-                <li key={item.uname}>{item.pname}</li>
+                <li key={item._id}>{item.pname}</li>
             ))}
         </ul>
     )
