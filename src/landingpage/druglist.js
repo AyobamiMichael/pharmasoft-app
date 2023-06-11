@@ -1,9 +1,9 @@
 import { React, useState, useEffect} from "react";
 import './druglist.css';
-import { NavLink } from "react-router-dom";
-import { blue } from "@mui/material/colors";
+//import { NavLink } from "react-router-dom";
+//import { blue } from "@mui/material/colors";
 import  searchresultimg from "../images/pharma2.jpg";
-import * as IoIcons from 'react-icons/io';
+//import * as IoIcons from 'react-icons/io';
 
 const AllDrugsList = (props) =>{
 
