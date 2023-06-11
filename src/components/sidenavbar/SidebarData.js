@@ -4,6 +4,12 @@ import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
 export const SidebarData = [
+  {
+    title: 'Home',
+    path: '/userdetails',
+    icon: <IoIcons.IoMdHome />,
+    cName: 'nav-text'
+  },
  {
     title: 'Add Pharmacy',
     path: '/registerpharmacy',

@@ -19,3 +19,39 @@
     top: 100px;
     width: 100px;
 }
+
+
+
+/* For Tablet View */
+
+@media only screen and (max-width: 768px)
+    {
+        .searchtextfield{
+            width: 300px;
+            right: 50px;
+        }
+        .signin{
+            left: 500px;
+        }
+    }
+  
+    @media (max-width: 480px) {
+        .searchtextfield{
+            width: 300px;
+            right: 50px;
+        }
+        .signin{
+            left: 300px;
+        }
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+
+    }
+ 
+
+
+
+
+

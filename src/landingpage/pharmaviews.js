@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 
@@ -6,7 +6,7 @@ const Pharmaviews = () =>{
 
     const [phamaviewsList, setpharmaViews] = useState([]);
     const [userviewsList, setuserViews] = useState([]);
-    const myList = [];
+  
      
     useEffect(()=>{
         fetch('https://wegotam.com/userviews', {
@@ -30,10 +30,10 @@ const Pharmaviews = () =>{
         .then((res)=> res.json())
         .then((data)=>{
             console.log(data, "pharmaciesData");
-            //console.log(data.data[0]);
-            setpharmaViews(data.data);
+          
+            setpharmaViews(data);
            // console.log(phamaviewsList[0]);
-           
+          
         });
   
     }, [])
@@ -44,27 +44,26 @@ const Pharmaviews = () =>{
 
  const userViews = userviewsList.map((userViews)=>(userViews.username));
 
-   // const pharmalist = phamaviewsList[0].pname;
+  //const pharmalist = phamaviewsList.map((pharmalist)=>(pharmalist[0].pname));
    console.log(userViews);
-   // console.log(pharmalist);
+  // console.log(phamaviewsList[0]['pname']);
    
     
 
-   /*  return(
+    return(
         <div>
         {phamaviewsList.map(({_id, pname, paddres}) => {
           return (
-            <div key={_id}>
-              <h2>Pharmacy: {pname}</h2>
-              <h2>Address: {paddres}</h2>
-  
+            <div key={_id} className='listpharmacies'>
+              <ul><li>Pharmacy: {pname}</li></ul>
+              
               <hr />
             </div>
           );
         })}
       </div>
     )
-   */
+   
 
 }
 
