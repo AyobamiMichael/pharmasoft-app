@@ -29,20 +29,22 @@ function App() {
   console.log(loggedIn);
 
   return (
-    <div style={{backgroundImage: `url(${backgroundImg})`,
-     height: '850px'
+    <div className='backgroundImage' style={{backgroundImage: `url(${backgroundImg})`,
+     height: '850px',
+     
      }}>
-    <div className="App">
+    <div className="pharma-App">
    
      <Router>
-     <header className="">
+  
      <div className="container">
-    
+     <header className="header">
        <Link className="navbar-brand" to={'/'}>
         <h1>pharmaSoft</h1> 
        </Link>
+       </header>
      </div>
-   </header>
+ 
    
        <Routes>
     

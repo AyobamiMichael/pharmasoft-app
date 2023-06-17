@@ -10,7 +10,8 @@
     border: black ridge 1px;
     border-radius: 10px;
     margin: 3px;
-    width: 50rem;
+    height: 410px;
+    width: 800px;
     padding-left: 50px;
    
 }
@@ -24,69 +25,80 @@
 p{
     color: white;
 }
-.contact{
+.contactaddress{
     color:black;
     font-weight: 600;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-@media only screen and (max-width: 768px)
-    {
-        .searchresult{
-            position: absolute;
-            left: 100px;
-            top: 200px;
-            font-size: 20px;
-            
-        }
-        .resultbox{
-            text-align: left;
-            border: black ridge 1px;
-            border-radius: 10px;
-            margin: 3px;
-            width: 30rem;
-            padding-left: 50px;
-           
-        }
-    }
-  
-    @media (max-width: 480px) {
-        .searchresult{
-            position: absolute;
-            left: 60px;
-            top: 200px;
-            font-size: 20px;
-            
-        }
-        .resultbox{
-            text-align: left;
-            border: black ridge 1px;
-            border-radius: 10px;
-            margin: 3px;
-            width: 10rem;
-            padding-left: 50px;
-           
-        }
+.contactphone{
+    color:black;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+
+
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 700px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+
+    .resultbox{
+        text-align: left;
+        border: black ridge 1px;
+        border-radius: 10px;
+        margin: 3px;
+        padding-left: 10px;
+        position: relative;
+        width: 150px;
+        height: 400px;
+        right: 10.6em;
+        bottom: 2.5em;
+       
     }
 
 
-    @media (max-width: 350px) {
-        .searchresult{
-            position: absolute;
-            left: 40px;
-            top: 200px;
-            font-size: 20px;
-            
-        }
-        .resultbox{
-            text-align: left;
-            border: black ridge 1px;
-            border-radius: 10px;
-            margin: 3px;
-            width: 6rem;
-            padding-left: 50px;
-           
-        }
-
+    .drugname{
+        color: white;
+        font-weight: 60;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       
     }
+
+
+    p{
+        color: white;
+        height: 35px;
+      
+    }
+
+    .contacttitle{
+        font-size: 20px;
+     
+    }
+    .contactaddress{
+        color:black;
+        font-weight: 20;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+       
+    }
+    .contactphone{
+        color:black;
+        font-weight: 50;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: -5px; 
+        top: 1px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+

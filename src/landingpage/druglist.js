@@ -66,15 +66,15 @@ return (
      
         {filteredData.map((item) => (
           <div className="resultbox" style={{backgroundImage: `url(${searchresultimg})`,
-          height: '410px', width:"800px"}}>
+        }}>
            <p key={item.id} className="drugname">{item.drugname}</p>
            <p key="{item1}">{'NGN'+item.pricepercard} </p>
            <p key="{item2}">{item.pname}</p>
            <p key="{item3}">{item.mg}</p>
            <p key="{item4}">{"EXP DATE: "+item.expdate}</p>
-           <p>Contact</p>
-           <p key="{item5}" className="contact">{item.paddress}</p>
-           <p key="{item6}" className="contact">{item.phone}</p>
+           <p className="contacttitle" >Contact</p>
+           <p key="{item5}" className="contactaddress">{item.paddress}</p>
+           <p key="{item6}" className="contactphone">{item.phone}</p>
            </div>
        ))}
      

@@ -55,6 +55,19 @@ const navigateToSignupPage = () => {
           variant="outlined"
           label="Search"
           className='searchtextfield'
+          InputLabelProps={{
+            style: {
+               fontSize: 14
+            }
+          }}
+          inputProps={
+            {
+              style:{
+                 height: 20
+              }
+            }
+          }
+          
         />
        </div>
        <div className="signin">

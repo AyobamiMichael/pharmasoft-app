@@ -1,17 +1,17 @@
 .main{
-    background-color: white;
+   
     height: 100px;
 }
 .searchbar{
     position: absolute;
     left: 200px;
     top: 90px;
+   
 
 }
 .searchtextfield{
-    width: 700px;
-    background-color: white;
-   
+    width: 700px;  
+   background-color: white;
 }
 .signin{
     position: absolute;
@@ -22,34 +22,47 @@
 
 
 
-/* For Tablet View */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 700px) 
+  and (-webkit-device-pixel-ratio: 2) {
 
-@media only screen and (max-width: 768px)
-    {
-        .searchtextfield{
-            width: 300px;
-            right: 50px;
-        }
-        .signin{
-            left: 500px;
-        }
-    }
-  
-    @media (max-width: 480px) {
-        .searchtextfield{
-            width: 300px;
-            right: 50px;
-        }
-        .signin{
-            left: 300px;
-        }
-    }
+   .main{
       
-    /* Media Query for low resolution  Tablets, Ipads */
-    @media (min-width: 481px) and (max-width: 767px) {
+      width: 150px;
+      height: 40px;
+   }
+   .searchbar{
+       position: relative;
+       left: 15px;
+       top: 30px;
+     
+   }
+  .searchtextfield{
+    width: 100px;
+    background-color: white;
+  
+  }
 
-    }
- 
+  
+  .signin{
+    position: absolute;
+    right: 340px;
+    top: 75px;
+    width: 20px;
+    height: 5px;
+}
+
+.btn-primary{
+    height: 40px;
+    font-size: 10px;
+}
+
+
+}
+
+
+
 
 
 
