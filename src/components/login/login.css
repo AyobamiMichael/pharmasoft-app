@@ -1,7 +1,7 @@
 .logincontainer{
     top: 6em;
     position: relative;
-    width: 400px;
+    width: 500px;
     margin: 0;
     align-items: center;
     display:inline-block;
@@ -11,80 +11,3 @@
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Default Design */
-
-.gfg-div {
- 
-    /* To make all elements center */
-    display: flex;
-    justify-content: center;
-    align-items: center; 
- 
-    /* Default Styling */
-    margin: 20px auto;
-    padding: 30px;
-    font-size: 30px;
-    width: 300px;
-    height: 300px;
-    
-    background-color: darkseagreen;
-    color: black;
-}
- 
-
-
- 
-/* For Tablet View */
-/*
-@media only screen and (min-device-width: 768px)
-   {
-    .logincontainer {
-        width: 200px;
-        height: 200px;
-        align-items: center;
-        display:inline-block;
-    }
-}
- 
-/* For Mobile Portrait View */
-/*
-@media screen and (max-device-width: 480px)
-    and (orientation: portrait) {
-        .logincontainer {
-        width: 200px;
-        height: 200px;
-        align-items: center;
-        display:inline-block;
-    }
-}
- 
-/* For Mobile Landscape View */
-/*
-@media screen and (max-device-width: 640px)
-    and (orientation: landscape) {
-        .logincontainer {
-        width: 200px;
-        height: 200px;
-        align-items: center;
-        display:inline-block;
-    }
-}
- 
-/* For Mobile Phones Portrait or Landscape View */
-/*
-@media screen
-    and (max-device-width: 640px) {
-        .logincontainer {
-        width: 400px;
-        height: 200px;
-        align-items: center;
-        display:inline-block;
-    }
-}
- 
