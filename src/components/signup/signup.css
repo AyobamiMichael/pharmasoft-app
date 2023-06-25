@@ -12,6 +12,7 @@
 
 
 /* For Tablet View */
+/*
 @media only screen and (max-device-width: 768px)
    {
     .signupcontainer{
@@ -23,7 +24,9 @@
       
     }
 }
+*/
 /* For Mobile Portrait View */
+/*
 @media screen and (max-device-width: 480px)
     and (orientation: portrait) {
 
@@ -40,6 +43,7 @@
 
 
 /* For Mobile Phones Portrait or Landscape View */
+/*
 @media screen
     and (max-device-width: 640px) {
     .signupcontainer{
@@ -49,4 +53,3 @@
         display:inline-block;
     }
 }
- 

@@ -41,6 +41,7 @@
 
  
 /* For Tablet View */
+/*
 @media only screen and (min-device-width: 768px)
    {
     .logincontainer {
@@ -52,6 +53,7 @@
 }
  
 /* For Mobile Portrait View */
+/*
 @media screen and (max-device-width: 480px)
     and (orientation: portrait) {
         .logincontainer {
@@ -63,6 +65,7 @@
 }
  
 /* For Mobile Landscape View */
+/*
 @media screen and (max-device-width: 640px)
     and (orientation: landscape) {
         .logincontainer {
@@ -74,6 +77,7 @@
 }
  
 /* For Mobile Phones Portrait or Landscape View */
+/*
 @media screen
     and (max-device-width: 640px) {
         .logincontainer {

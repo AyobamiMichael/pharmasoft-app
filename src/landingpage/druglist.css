@@ -51,8 +51,8 @@ p{
         margin: 3px;
         padding-left: 10px;
         position: relative;
-        width: 150px;
-        height: 400px;
+        width: 30px;
+        height: 30px;
         right: 10.6em;
         bottom: 2.5em;
        
@@ -61,8 +61,8 @@ p{
 
     .drugname{
         color: white;
-        font-weight: 60;
-        font-size: 20px;
+        font-weight: 40;
+        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
        
     }
@@ -70,24 +70,24 @@ p{
 
     p{
         color: white;
-        height: 35px;
+        height: 30px;
       
     }
 
     .contacttitle{
-        font-size: 20px;
+        font-size: 15px;
      
     }
     .contactaddress{
         color:black;
-        font-weight: 20;
+        font-weight: 15;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 15px;
        
     }
     .contactphone{
         color:black;
-        font-weight: 50;
+        font-weight: 15;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         height: -5px; 
         top: 1px;
