@@ -41,7 +41,6 @@ p{
 
 @media screen 
   and (device-width: 480px) 
-  and (device-height: 700px) 
   and (-webkit-device-pixel-ratio: 2) {
 
 
@@ -96,9 +95,5 @@ p{
     }
 
 }
-
-
-
-
 
 

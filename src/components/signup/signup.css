@@ -1,7 +1,7 @@
 .signupcontainer{
     top: 6em;
     position: relative;
-    width: 500px;
+    width: 400px;
     margin: 0;
     align-items: center;
     display:inline-block;
@@ -15,8 +15,8 @@
 @media only screen and (max-device-width: 768px)
    {
     .signupcontainer{
-        width: 400px;
-        height: 400px;
+        width: 200px;
+        height: 200px;
         align-items: center;
         display:inline-block;
     
@@ -42,7 +42,7 @@
 @media screen
     and (max-device-width: 640px) {
     .signupcontainer{
-        width: 400px;
+        width: 200px;
         height: 200px;
        
     }
