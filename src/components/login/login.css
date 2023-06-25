@@ -57,7 +57,8 @@
         .logincontainer {
         width: 200px;
         height: 200px;
-
+        align-items: center;
+        display:inline-block;
     }
 }
  
@@ -67,7 +68,8 @@
         .logincontainer {
         width: 200px;
         height: 200px;
-
+        align-items: center;
+        display:inline-block;
     }
 }
  
@@ -77,7 +79,8 @@
         .logincontainer {
         width: 400px;
         height: 200px;
-       
+        align-items: center;
+        display:inline-block;
     }
 }
  

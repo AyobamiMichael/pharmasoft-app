@@ -15,8 +15,8 @@
 @media only screen and (max-device-width: 768px)
    {
     .signupcontainer{
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
         align-items: center;
         display:inline-block;
     
@@ -30,7 +30,8 @@
         .signupcontainer{
             width: 200px;
             height: 200px;
-           
+            align-items: center;
+            display:inline-block;
 
         }
        
@@ -42,9 +43,10 @@
 @media screen
     and (max-device-width: 640px) {
     .signupcontainer{
-        width: 200px;
+        width: 400px;
         height: 200px;
-       
+        align-items: center;
+        display:inline-block;
     }
 }
  
