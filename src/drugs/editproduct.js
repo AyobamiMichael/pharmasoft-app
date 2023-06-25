@@ -30,7 +30,7 @@ export default class EditDrug extends Component {
 
           console.log( id, drugname, mg, price, time);
           
-          fetch("http://54.89.82.209:4000/editdrug",{
+          fetch("https://wegotam.com/editdrug",{
              method: "POST",
              crossDomain: true,
              headers: {

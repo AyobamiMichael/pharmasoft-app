@@ -15,6 +15,7 @@ import ViewDialog from "../components/modificatenavbar/Modificatenavbar";
 //import { DeleteIcon } from '@mui/icons-material';
 import { MdDelete } from 'react-icons/md';
 import { IconContext } from "react-icons";
+import { LogoutSharp } from "@mui/icons-material";
 
 
 
@@ -24,11 +25,11 @@ const ViewDrugs =() =>{
  var listOfDrugsSelected = [];
 const columns = [
   
-  { field: '_id', headerName: 'ID', width: 200, editable: true},
-  { field: 'drugname', headerName: 'Product Name', width: 200, editable: false},
+  { field: '_id', headerName: 'ID', width: 200, editable: false},
+  { field: 'drugname', headerName: 'Product Name', width: 200, editable: true},
   { field: 'pname', headerName: 'Pharmacy', width: 200 },
   { field: 'mg', headerName: 'Mg', width: 100, editable: false},
-  { field: 'pricepercard', headerName: 'Price', width: 100, editable: false},
+  { field: 'pricepercard', headerName: 'Price', width: 100, editable: true},
   { field: 'drugcategory', headerName: 'Product Category', width: 200 },
   { field: 'expdate', headerName: 'Expiry Date', width: 200 },
   { field: 'othersCategory', headerName: 'Other Category', width: 200 },
@@ -37,6 +38,8 @@ const columns = [
     <MdDelete
     onClick={(e) => {onButtonClick(e, params.row);
           // handleClickToOpen();
+         // HandleRows();
+         // handleDrugDelete();
          
     }}
       variant="outlined"
@@ -145,33 +148,144 @@ const handleClickToDelete = () =>{
     },
   };
 
-  const handleUserUpdate =() =>{
+
+
+
+  const [id, setDrugId] = useState([]);
+  const [drugname, setDrugName] = useState([]);
+  const [mg, setDrugMg] = useState([]);
+  const [price, setDrugPrice] = useState([]);
+  const [time, setDrugTime] = useState([]);
+  
+  
+  
+  var updatedRow;
+
+  const HandleRows = (newRow) =>{
+    
+   
+      updatedRow = { ...newRow, isNew: false };
+   console.log(updatedRow, "updatedRow");
+  
+   //anewList.push(updatedRow);
+   //console.log(anewList);
+   const {_id: drugId, pricepercard, drugname,  drugcategory, expdate,
+    mg, time
+  } = updatedRow
+
+   console.log(drugId);
+   console.log(drugname);
+   console.log(pricepercard);
+
+  
+   
+   setDrugId(drugId);
+   setDrugPrice(pricepercard);
+   setDrugName(drugname);
+   setDrugMg(mg);
+   setDrugTime(time);
+
+
+        //handle send data to api
+         return updatedRow;
 
   }
-  const handleDrugDelete = () =>{
-   // setDeletedDrugs(clickedRow['_id'])
-     const id = clickedRow['_id'];
 
-    fetch("https://wegotam.com/deletedrug",{
-      method: "POST",
-      crossDomain: true,
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        id,
+  const HandleUpdate = () =>{
+     
+    // console.log(drugname);
+   // const newId = updatedRow.drugId;
+
+   // if(newId === undefined){
+   //   alert("Product Not updated");
+    // }
+  
+     fetch("https://wegotam.com/editdrug",{
+               method: "POST",
+               crossDomain: true,
+               headers: {
+                 "Content-Type": "application/json",
+                 Accept: "application/json",
+                 "Access-Control-Allow-Origin": "*",
+               },
+               body: JSON.stringify({
+                id,
+                drugname,
+                mg,
+                price,
+                time
+              
+              }),
+            })
+            .then((res) => res.json())
+            .then((data) => {
+              console.log(drugname, 'drugname');
+              console.log(data, "editdrug");
+              if (data.status === "ok") {
+                alert("Product successfully updated");
+               window.localStorage.setItem("token", data.data);
+                //window.location.href = "./viewdrugs";
+              }
+              
+            }); 
+            
+    }
+  
+     let destructuredDrugList = [];
+
+    const handleDrugDelete = () =>{
+     // setDeletedDrugs(clickedRow['_id'])
+     // const id = clickedRow['_id'];
+     
+     const [list1 ] = destructuredDrugList;
+      const {id: iddelete} = list1;
+      //console.log(list1);
+      //console.log(iddelete);
+
+      fetch("https://wegotam.com/deletedrug",{
+        method: "POST",
+        crossDomain: true,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          id,
+         
+       }),
+     })
+     .then((res) => res.json())
+     .then((data) => {
+       console.log(id, 'drugId');
+       console.log(data, "deletedrug");
+       if (data.status === "ok") {
+         alert("Product successfully deleted");
+        //window.localStorage.setItem("token", data.data);
+         //window.location.href = "./viewdrugs";
+       }
        
-     }),
-   })
+     }); 
+
   }
 
-
+ 
     return(
       <div>
       <Navbar />
       <div className="grid" style={{ height: 500, width: '80%' }}>
+
+      <div className="update">
+         <button type='button' onClick={HandleUpdate} className="btn btn-primary">
+           Update
+         </button>
+       </div>
+       <div className="delete">
+         <button type='button'  onClick={handleDrugDelete} className="btn btn-primary">
+           Delete
+         </button>
+       </div>
+
       <DataGrid
         getRowId={(row) => row._id}
         rows={tableData}
@@ -181,7 +295,7 @@ const handleClickToDelete = () =>{
 
         experimentalFeatures={{ newEditingApi: true }}       
          
-        checkboxSelection
+        checkboxSelection={true}
        // onSelectionModelChange={({ selectionModel = [] }) => {
          // const rowIds = selectionModel.map(rowId => parseInt(String(rowId), 10));
          // const rowsToDelete = tableData.filter(row => rowIds.includes(row._id));
@@ -189,24 +303,45 @@ const handleClickToDelete = () =>{
           //console.log(rowsToDelete);
        // }}
         //rows={rows}
+        processRowUpdate={HandleRows}
+    
        onSelectionModelChange={(ids) => {
          const selectedIDs = new Set(ids);
+     
          listOfDrugsSelected.push(ids);
-      //  console.log(selectedIDs.has('630a93fedd4e0f7c7b3ecf13'));
-         const selectedRowData = rows.filter((row) =>
+         const selectedRowData = tableData.filter((row) =>
           
            selectedIDs.has(row._id)
            // rows.find(selectedIDs)
             
              
          );
-          
-          // console.log(selectedRowData);
+
+       
+
+          destructuredDrugList = selectedRowData.map((drug)=>({
+          'id': drug._id,
+          'drugname':drug.drugname,
+          'pricepercard': drug.pricepercard,
+          'pname': drug.pname,
+          'mg': drug.mg,
+          'expdate': drug.expdate,
+          'phone': drug.phone,
+          'paddress': drug.paddress 
+  
+        }));
+
+        
+          console.log('Destructed',destructuredDrugList);
           console.log(selectedIDs);
-          console.log(listOfDrugsSelected);
+         // console.log(listOfDrugsSelected);
+         //console.log(tableData);
+        
          
        }}
-       onRowUpdated={handleUserUpdate}
+
+
+      // onRowUpdated={handleUserUpdate}
        // onRowDeleted={handleDrugDelete}
       />
      

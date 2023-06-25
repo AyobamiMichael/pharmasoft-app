@@ -40,7 +40,7 @@ function App() {
      <div className="container">
      <header className="header">
        <Link className="navbar-brand" to={'/'}>
-        <h1>pharmaSoft</h1> 
+        <h1>WaterRock</h1> 
        </Link>
        </header>
      </div>

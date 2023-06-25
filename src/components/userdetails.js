@@ -3,6 +3,7 @@ import Navbar from "./sidenavbar/Navbar";
 import ViewDrugs from "../drugs/viewdrugs";
 import SelectPharmacy from "../pharmacy/selectpharmacy";
 import React, { useState, useEffect, useRef } from 'react';
+import "./userdetails.css";
 
 
 
@@ -75,11 +76,11 @@ const UserDetails =() =>{
     <>
     <Navbar />
       
-    <div>
+    <div className="welcome">
       Welcome <h1>{username}</h1> 
      
     </div>
-    <div>
+    <div className="numberofviews">
       Number of views <h1>{numberOfViews}</h1>
     </div>
     </>

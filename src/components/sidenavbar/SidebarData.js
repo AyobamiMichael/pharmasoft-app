@@ -29,14 +29,15 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Edit Product',
-    path: '/editproduct',
+    title: 'Search',
+    path: '/landingpage',
     icon: <IoIcons.IoMdGrid />,
     cName: 'nav-text'
   },
+
   {
     title: 'Support',
-    path: '/support',
+    path: '',
     icon: <IoIcons.IoMdHelpCircle />,
     cName: 'nav-text'
   },
