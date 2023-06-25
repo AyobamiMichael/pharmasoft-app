@@ -51,7 +51,7 @@
     
     .btn{
         position: absolute;
-        right: 20em;
+        left: 15em;
         top: 100px;
         width: 100px;
     }
@@ -75,7 +75,7 @@
     
         .btn{
             position: absolute;
-            right: 15em;
+            left: 10em;
             top: 100px;
             width: 100px;
         }
@@ -99,7 +99,7 @@
     
         .btn{
             position: absolute;
-            right: 15em;
+            left: 15em;
             top: 100px;
             width: 100px;
         }
@@ -121,7 +121,7 @@
     
         .btn{
             position: absolute;
-            right: 15em;
+            left: 15em;
             top: 100px;
             width: 100px;
         }

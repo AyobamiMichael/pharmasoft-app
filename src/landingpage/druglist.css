@@ -26,13 +26,13 @@ p{
     color: white;
 }
 .contactaddress{
-    color:black;
+    color:white;
     font-weight: 600;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .contactphone{
-    color:black;
+    color:white;
     font-weight: 600;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -86,7 +86,7 @@ p{
        
     }
     .contactphone{
-        color: white;
+        color:white;
         font-weight: 15;
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         height: -5px; 
@@ -107,7 +107,7 @@ p{
             padding-left: 10px;
             position: relative;
             width: 200px;
-            height: 150px;
+            height: 100px;
             right: 10.6em;
             bottom: 2.5em;
            
@@ -117,7 +117,7 @@ p{
         .drugname{
             color: white;
             font-weight: 40;
-            font-size: 30px;
+            font-size: 15px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
            
         }
@@ -166,7 +166,7 @@ p{
             padding-left: 10px;
             position: relative;
             width: 200px;
-            height: 150px;
+            height: 100px;
             right: 10.6em;
             bottom: 2.5em;
            
@@ -176,7 +176,7 @@ p{
         .drugname{
             color: white;
             font-weight: 40;
-            font-size: 30px;
+            font-size: 15px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
            
         }
@@ -207,6 +207,7 @@ p{
             top: 1px;
             font-size: 15px;
         }
+    
 
 
 
