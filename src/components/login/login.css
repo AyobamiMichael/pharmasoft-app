@@ -9,6 +9,8 @@
     
 }
 
+
+
 @media screen and (max-device-width: 480px)
     and (orientation: portrait) {
     
@@ -19,7 +21,7 @@
             margin: 0;
             align-items: center;
             display:inline-block;
-           
+            
             
         }
 
@@ -27,8 +29,7 @@
 
 @media screen and (min-device-width: 320px)
     and (-webkit-min-device-pixel-ratio: 2) {
-     
-
+      
         .logincontainer{
             top: 6em;
             position: relative;
@@ -36,7 +37,7 @@
             margin: 0;
             align-items: center;
             display:inline-block;
-           
+            
             
         }
 }
@@ -52,11 +53,8 @@
             margin: 0;
             align-items: center;
             display:inline-block;
-           
+            
             
         }
 
 }
-
-
-
