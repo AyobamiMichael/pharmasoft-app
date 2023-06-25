@@ -9,5 +9,50 @@
     
 }
 
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+    
+        .signupcontainer{
+            top: 6em;
+            position: relative;
+            width: 200px;
+            margin: 0;
+            align-items: center;
+            display:inline-block;
+            
+            
+        }
 
+}
 
+@media screen and (min-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      
+        .signupcontainer{
+            top: 6em;
+            position: relative;
+            width: 200px;
+            margin: 0;
+            align-items: center;
+            display:inline-block;
+            
+            
+        }
+}
+
+@media (device-height: 568px)
+    and (device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+     
+        .signupcontainer{
+            top: 6em;
+            position: relative;
+            width: 200px;
+            margin: 0;
+            align-items: center;
+            display:inline-block;
+            
+            
+        }
+
+}
