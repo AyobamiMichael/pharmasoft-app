@@ -41,6 +41,14 @@ p{
 /* For Tablet View */
 @media only screen and (min-device-width: 768px)
    {
+
+    .searchresult{
+    position: absolute;
+    left: 220px;
+    top: 200px;
+    font-size: 20px;
+    
+}
   
     .resultbox{
         text-align: left;
@@ -108,6 +116,14 @@ p{
   and (-webkit-device-pixel-ratio: 2) {
 
 
+    .searchresult{
+        position: absolute;
+        left: 220px;
+        top: 200px;
+        font-size: 20px;
+        
+    }
+
     .resultbox{
         text-align: left;
         border: black ridge 1px;
@@ -163,6 +179,14 @@ p{
 @media screen and (min-device-width: 320px)
     and (-webkit-min-device-pixel-ratio: 2) {
 
+
+        .searchresult{
+            position: absolute;
+            left: 220px;
+            top: 200px;
+            font-size: 20px;
+            
+        }
 
         .resultbox{
             text-align: left;
@@ -221,7 +245,14 @@ p{
     and (device-width: 320px)
     and (-webkit-min-device-pixel-ratio: 2) {
   
-     
+        .searchresult{
+            position: absolute;
+            left: 220px;
+            top: 200px;
+            font-size: 20px;
+            
+        }
+        
         .resultbox{
             text-align: left;
             border: black ridge 1px;
