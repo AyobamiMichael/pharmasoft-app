@@ -30,7 +30,7 @@
 }
 
 
-/* Default Design */
+
 
  
 /* For Tablet View */
@@ -51,7 +51,7 @@
     
     .signin{
         position: absolute;
-        left: 15em;
+        left: 30em;
         top: 100px;
         width: 100px;
     }
@@ -126,4 +126,23 @@
             width: 100px;
         }
 }
+
+@media screen and (min-device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+   
+}
+ 
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px)
+    and (device-width: 320px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+ 
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px)
+    and (min-device-width: 375px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+  
+};
  
