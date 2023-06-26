@@ -38,6 +38,22 @@ p{
 }
 
 
+/* For Tablet View */
+@media only screen and (min-device-width: 768px)
+   {
+    .searchresult{
+        position: relative;
+        left: 220px;
+        top: 500px;
+        font-size: 20px;
+        
+    }
+    
+   
+   
+
+}
+
 
 
 
@@ -53,7 +69,7 @@ p{
     .searchresult{
         position: absolute;
         left: 220px;
-        top: 100px;
+        top: 200px;
         font-size: 20px;
         
     }
