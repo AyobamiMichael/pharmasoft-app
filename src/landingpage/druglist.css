@@ -44,9 +44,9 @@ p{
 
     .searchresult{
     position: absolute;
-    left: 220px;
+    left: 40em;
     top: 200px;
-    font-size: 20px;
+    font-size: 50px;
     
 }
   
@@ -252,7 +252,7 @@ p{
             font-size: 20px;
             
         }
-        
+
         .resultbox{
             text-align: left;
             border: black ridge 1px;
