@@ -71,7 +71,7 @@ const navigateToSignupPage = () => {
         />
        </div>
        <div className="signin">
-          <button type='button' onClick={navigateToSignupPage} className="btn btn-primary">
+          <button type='button' onClick={navigateToSignupPage}>
             Sign In
           </button>
           <Routes>
