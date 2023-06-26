@@ -1,6 +1,6 @@
 .searchresult{
     position: absolute;
-    left: 500px;
+    left: 220px;
     top: 300px;
     font-size: 20px;
     
@@ -53,7 +53,7 @@ p{
     .searchresult{
         position: absolute;
         left: 220px;
-        top: 200px;
+        top: 100px;
         font-size: 20px;
         
     }
